@@ -257,7 +257,8 @@ class Octree
 		    !isNodeCollapsible(static_cast<INNER_NODE const&>(*node), code.getDepth())) {
 			return false;
 		}
-		return deleteChildren(static_cast<INNER_NODE&>(node), code.getDepth(), true);
+		deleteChildren(static_cast<INNER_NODE&>(*node), code.getDepth(), true);
+		return true;
 	}
 
 	//
@@ -509,7 +510,8 @@ class Octree
 		if (code.getDepth() != depth) {
 			return false;
 		}
-		return deleteChildren(static_cast<INNER_NODE&>(node), code.getDepth(), true);
+		deleteChildren(static_cast<INNER_NODE&>(node), code.getDepth(), true);
+		return true;
 	}
 
 	//
