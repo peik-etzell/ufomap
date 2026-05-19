@@ -172,7 +172,7 @@ struct OccupancyMapInnerNodeBase : OccupancyMapLeafNode<T> {
 	// Indicates whether this node or any of its children contains free space
 	bool contains_free;
 	// Indicates whether this node or any of its children contains unknown space
-	bool contains_unknown;
+	bool contains_unknown = true;
 };
 
 template <typename T>
