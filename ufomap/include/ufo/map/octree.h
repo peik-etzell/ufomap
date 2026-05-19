@@ -244,7 +244,7 @@ class Octree
 	// Pruning
 	//
 
-	bool prune() { return prune(getRootCode()); }
+	bool prune() { return pruneNode(getRootCode()); }
 
 	bool pruneNode(Code const& code)
 	{
