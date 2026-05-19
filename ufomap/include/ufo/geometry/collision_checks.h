@@ -44,7 +44,6 @@
 
 #include <ufo/geometry/aabb.h>
 #include <ufo/geometry/bounding_volume.h>
-// #include <ufo/geometry/capsule.h>
 #include <ufo/geometry/frustum.h>
 #include <ufo/geometry/line_segment.h>
 #include <ufo/geometry/obb.h>

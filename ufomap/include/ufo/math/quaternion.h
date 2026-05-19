@@ -42,12 +42,12 @@
 #ifndef UFO_MATH_QUATERNION_H
 #define UFO_MATH_QUATERNION_H
 
-// UFO
 #include <ufo/math/vector3.h>
 
-// STD
+#include <algorithm>
 #include <array>
 #include <cmath>
+#include <cstddef>
 #include <type_traits>
 #include <vector>
 

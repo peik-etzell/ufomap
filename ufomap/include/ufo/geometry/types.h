@@ -1,10 +1,10 @@
 /**
  * UFOGeometry - the geometry library used in UFO
- * 
+ *
  * @author D. Duberg, KTH Royal Institute of Technology, Copyright (c) 2020.
  * @see https://github.com/UnknownFreeOccupied/ufogeometry
  * License: BSD 3
- * 
+ *
  */
 
 /*
@@ -53,7 +53,8 @@
 
 #include <variant>
 
-namespace ufo::geometry {
+namespace ufo::geometry
+{
 using BoundingVar =
     std::variant<AABB, Frustum, LineSegment, OBB, Plane, Point, Ray, Sphere>;
 }  // namespace ufo::geometry

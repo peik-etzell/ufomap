@@ -42,7 +42,8 @@
 #ifndef UFO_MAP_OCTREE_H
 #define UFO_MAP_OCTREE_H
 
-// UFO
+#include <lz4.h>
+#include <lz4hc.h>
 #include <ufo/map/code.h>
 #include <ufo/map/iterator/octree.h>
 #include <ufo/map/iterator/octree_nearest.h>
@@ -50,21 +51,10 @@
 #include <ufo/map/octree_node.h>
 #include <ufo/map/types.h>
 
-// STD
-#include <algorithm>
-#include <bitset>
 #include <cstring>
 #include <fstream>
-#include <future>
-#include <numeric>
 #include <optional>
 #include <sstream>
-#include <type_traits>
-#include <vector>
-
-// Compression
-#include <lz4.h>
-#include <lz4hc.h>
 
 namespace ufo::map
 {

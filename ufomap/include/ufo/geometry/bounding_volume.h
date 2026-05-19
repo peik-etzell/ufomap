@@ -42,7 +42,6 @@
 #ifndef UFO_GEOMETRY_BOUDING_VOLUME_H
 #define UFO_GEOMETRY_BOUDING_VOLUME_H
 
-#include <ufo/geometry/collision_checks.h>
 #include <ufo/geometry/types.h>
 
 namespace ufo::geometry

@@ -42,7 +42,6 @@
 #ifndef UFO_MAP_COLOR_H
 #define UFO_MAP_COLOR_H
 
-// STD
 #include <cstdint>
 
 namespace ufo::map

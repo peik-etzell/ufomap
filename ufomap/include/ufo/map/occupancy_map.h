@@ -44,6 +44,8 @@
 
 #include <ufo/map/occupancy_map_base.h>
 
+#include <string>
+
 namespace ufo::map
 {
 class OccupancyMap : public OccupancyMapBase<OccupancyNode<float>>
@@ -63,9 +65,9 @@ class OccupancyMap : public OccupancyMapBase<OccupancyNode<float>>
 	             double clamping_thres_min = 0.1192, double clamping_thres_max = 0.971);
 
 	OccupancyMap(std::string const& filename, bool automatic_pruning = true,
-	                 double occupied_thres = 0.5, double free_thres = 0.5,
-	                 double prob_hit = 0.7, double prob_miss = 0.4,
-	                 double clamping_thres_min = 0.1192, double clamping_thres_max = 0.971);
+	             double occupied_thres = 0.5, double free_thres = 0.5,
+	             double prob_hit = 0.7, double prob_miss = 0.4,
+	             double clamping_thres_min = 0.1192, double clamping_thres_max = 0.971);
 
 	OccupancyMap(OccupancyMap const& other);
 

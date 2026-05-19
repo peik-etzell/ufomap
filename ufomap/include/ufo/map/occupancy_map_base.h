@@ -49,6 +49,9 @@
 #include <ufo/map/point_cloud.h>
 #include <ufo/map/types.h>
 
+#include <bitset>
+#include <future>
+
 namespace ufo::map
 {
 enum OccupancyState { unknown, free, occupied };

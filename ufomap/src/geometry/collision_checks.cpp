@@ -39,10 +39,23 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <ufo/geometry/aabb.h>
 #include <ufo/geometry/collision_checks.h>
+#include <ufo/geometry/frustum.h>
+#include <ufo/geometry/line_segment.h>
+#include <ufo/geometry/obb.h>
+#include <ufo/geometry/plane.h>
+#include <ufo/geometry/point.h>
+#include <ufo/geometry/ray.h>
+#include <ufo/geometry/sphere.h>
 
-#include <exception>
+#include <algorithm>
+#include <cmath>
+#include <cstdlib>
 #include <limits>
+#include <stdexcept>
+#include <utility>
+#include <vector>
 
 namespace ufo::geometry
 {

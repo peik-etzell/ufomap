@@ -42,11 +42,9 @@
 #ifndef UFO_MATH_POSE6_H
 #define UFO_MATH_POSE6_H
 
-// UFO
 #include <ufo/math/quaternion.h>
 #include <ufo/math/vector3.h>
 
-// STD
 #include <cmath>
 #include <type_traits>
 

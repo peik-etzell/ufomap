@@ -42,7 +42,10 @@
 #ifndef UFO_MAP_ITERATOR_NEAREST_OCCUPANCY_MAP_H
 #define UFO_MAP_ITERATOR_NEAREST_OCCUPANCY_MAP_H
 
+#include <ufo/geometry/aabb.h>
+#include <ufo/geometry/bounding_volume.h>
 #include <ufo/map/iterator/octree_nearest.h>
+#include <ufo/map/types.h>
 
 namespace ufo::map
 {

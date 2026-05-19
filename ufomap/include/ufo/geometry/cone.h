@@ -1,10 +1,10 @@
 /**
  * UFOGeometry - the geometry library used in UFO
- * 
+ *
  * @author D. Duberg, KTH Royal Institute of Technology, Copyright (c) 2020.
  * @see https://github.com/UnknownFreeOccupied/ufogeometry
  * License: BSD 3
- * 
+ *
  */
 
 /*
@@ -44,7 +44,8 @@
 
 #include <ufo/geometry/point.h>
 
-namespace ufo::geometry {
+namespace ufo::geometry
+{
 struct Cone {
 };
 }  // namespace ufo::geometry

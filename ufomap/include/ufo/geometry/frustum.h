@@ -42,11 +42,9 @@
 #ifndef UFO_GEOMETRY_FRUSTUM_H
 #define UFO_GEOMETRY_FRUSTUM_H
 
-// UFO
 #include <ufo/geometry/plane.h>
 #include <ufo/geometry/point.h>
 
-// STD
 #include <array>
 #include <cmath>
 

@@ -42,12 +42,14 @@
 #ifndef UFO_MAP_ITERATOR_NEAREST_OCTREE_H
 #define UFO_MAP_ITERATOR_NEAREST_OCTREE_H
 
+#include <ufo/geometry/aabb.h>
 #include <ufo/geometry/bounding_volume.h>
 #include <ufo/geometry/collision_checks.h>
 #include <ufo/map/types.h>
 
+#include <cstddef>
+#include <iterator>
 #include <queue>
-#include <type_traits>
 #include <vector>
 
 namespace ufo::map

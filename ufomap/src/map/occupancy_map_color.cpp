@@ -39,7 +39,16 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <ufo/map/code.h>
+#include <ufo/map/color.h>
+#include <ufo/map/occupancy_map_base.h>
 #include <ufo/map/occupancy_map_color.h>
+#include <ufo/map/point_cloud.h>
+#include <ufo/map/types.h>
+
+#include <cmath>
+#include <string>
+#include <vector>
 
 namespace ufo::map
 {

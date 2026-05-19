@@ -42,13 +42,14 @@
 #ifndef UFO_MAP_ITERATOR_OCTREE_H
 #define UFO_MAP_ITERATOR_OCTREE_H
 
+#include <ufo/geometry/aabb.h>
 #include <ufo/geometry/bounding_volume.h>
-#include <ufo/geometry/collision_checks.h>
 #include <ufo/map/code.h>
 #include <ufo/map/types.h>
 
 #include <array>
-#include <type_traits>
+#include <cstddef>
+#include <iterator>
 
 namespace ufo::map
 {

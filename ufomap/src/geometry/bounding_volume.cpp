@@ -40,6 +40,10 @@
  */
 
 #include <ufo/geometry/bounding_volume.h>
+#include <ufo/geometry/collision_checks.h>
+#include <ufo/geometry/types.h>
+
+#include <variant>
 
 namespace ufo::geometry
 {

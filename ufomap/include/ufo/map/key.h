@@ -42,11 +42,8 @@
 #ifndef UFO_MAP_KEY_H
 #define UFO_MAP_KEY_H
 
-// UFO
-#include <ufo/map/types.h>
-
-// STD
 #include <immintrin.h>
+#include <ufo/map/types.h>
 
 #include <array>
 #include <cstddef>

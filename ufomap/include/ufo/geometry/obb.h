@@ -42,12 +42,8 @@
 #ifndef UFO_GEOMETRY_ORIENTED_BOUNDING_BOX_H
 #define UFO_GEOMETRY_ORIENTED_BOUNDING_BOX_H
 
-// UFO
 #include <ufo/geometry/point.h>
 #include <ufo/math/quaternion.h>
-
-// STD
-#include <stdexcept>
 
 namespace ufo::geometry
 {

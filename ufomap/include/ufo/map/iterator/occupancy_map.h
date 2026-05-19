@@ -42,7 +42,9 @@
 #ifndef UFO_MAP_ITERATOR_OCCUPANCY_MAP_H
 #define UFO_MAP_ITERATOR_OCCUPANCY_MAP_H
 
+#include <ufo/geometry/bounding_volume.h>
 #include <ufo/map/iterator/octree.h>
+#include <ufo/map/types.h>
 
 namespace ufo::map
 {
@@ -178,9 +180,10 @@ class OccupancyMapIterator
 			// printf("Occupied space: %s\n", occupied_space_ ? "True" : "False");
 			// printf("Unknown space:  %s\n", unknown_space_ ? "True" : "False");
 			// printf("Free space:     %s\n", free_space_ ? "True" : "False");
-			// printf("Contains occupied: %s\n", containsOccupied(node, depth) ? "True" : "False");
-			// printf("Contains unknown:  %s\n", containsUnknown(node, depth) ? "True" : "False");
-			// printf("Contains Free:     %s\n", containsFree(node, depth) ? "True" : "False");
+			// printf("Contains occupied: %s\n", containsOccupied(node, depth) ? "True" :
+			// "False"); printf("Contains unknown:  %s\n", containsUnknown(node, depth) ? "True"
+			// : "False"); printf("Contains Free:     %s\n", containsFree(node, depth) ? "True"
+			// : "False");
 			return (occupied_space_ && containsOccupied(node, depth)) ||
 			       (unknown_space_ && containsUnknown(node, depth)) ||
 			       (free_space_ && containsFree(node, depth));

@@ -42,11 +42,9 @@
 #ifndef UFO_MAP_TYPES_H
 #define UFO_MAP_TYPES_H
 
-// UFO
 #include <ufo/map/color.h>
 #include <ufo/math/vector3.h>
 
-// STD
 #include <cstdint>
 
 namespace ufo::map

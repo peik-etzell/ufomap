@@ -40,6 +40,10 @@
  */
 
 #include <ufo/map/occupancy_map.h>
+#include <ufo/map/occupancy_map_base.h>
+#include <ufo/map/types.h>
+
+#include <string>
 
 namespace ufo::map
 {

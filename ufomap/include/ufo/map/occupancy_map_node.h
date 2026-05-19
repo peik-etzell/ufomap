@@ -42,10 +42,12 @@
 #ifndef UFO_MAP_OCCUPANCY_MAP_NODE_H
 #define UFO_MAP_OCCUPANCY_MAP_NODE_H
 
-// UFO
-#include <ufo/map/code.h>
 #include <ufo/map/color.h>
 #include <ufo/map/octree_node.h>
+
+#include <cstdint>
+#include <istream>
+#include <ostream>
 
 namespace ufo::map
 {

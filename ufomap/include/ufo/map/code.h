@@ -42,18 +42,13 @@
 #ifndef UFO_MAP_CODE_H
 #define UFO_MAP_CODE_H
 
-// UFO
+#include <immintrin.h>
 #include <ufo/map/key.h>
 #include <ufo/map/types.h>
-
-// STD
-#include <immintrin.h>
 
 #include <algorithm>
 #include <execution>
 #include <list>
-#include <unordered_map>
-#include <unordered_set>
 #include <vector>
 
 namespace ufo::map

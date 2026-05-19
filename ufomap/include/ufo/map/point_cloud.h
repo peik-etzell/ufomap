@@ -42,12 +42,11 @@
 #ifndef UFO_MAP_POINT_CLOUD_H
 #define UFO_MAP_POINT_CLOUD_H
 
-// UFO
 #include <ufo/map/types.h>
 #include <ufo/math/pose6.h>
 
-// STD
 #include <algorithm>
+#include <cstddef>
 #include <execution>
 #include <type_traits>
 #include <vector>

@@ -42,7 +42,6 @@
 #ifndef UFO_MAP_OCTREE_NODE_H
 #define UFO_MAP_OCTREE_NODE_H
 
-// STD
 #include <iostream>
 
 namespace ufo::map
@@ -58,10 +57,7 @@ struct OctreeLeafNode {
 	 * @param s The stream to write the data to
 	 * @return std::ostream&
 	 */
-	std::ostream& writeData(std::ostream& s) const
-	{
-		return value.writeData(s);
-	}
+	std::ostream& writeData(std::ostream& s) const { return value.writeData(s); }
 
 	/**
 	 * @brief Read the data for this node from stream s
@@ -69,10 +65,7 @@ struct OctreeLeafNode {
 	 * @param s The stream to read the data from
 	 * @return std::istream&
 	 */
-	std::istream& readData(std::istream& s)
-	{
-		return value.readData(s);
-	}
+	std::istream& readData(std::istream& s) { return value.readData(s); }
 };
 
 template <typename T>
