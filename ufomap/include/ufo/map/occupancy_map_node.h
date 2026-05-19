@@ -177,13 +177,6 @@ struct OccupancyMapInnerNodeBase : OccupancyMapLeafNode<T> {
 
 template <typename T>
 using OccupancyMapInnerNode = OctreeInnerNodeBase<OccupancyMapInnerNodeBase<T>>;
-
-template <typename T>
-struct Node {
-	OccupancyMapLeafNode<T> const* node;
-	Code code;
-};
-
 }  // namespace ufo::map
 
 #endif  // UFO_MAP_OCCUPANCY_MAP_NODE_H
