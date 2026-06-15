@@ -1,10 +1,10 @@
 /**
  * UFOGeometry - the geometry library used in UFO
- * 
+ *
  * @author D. Duberg, KTH Royal Institute of Technology, Copyright (c) 2020.
  * @see https://github.com/UnknownFreeOccupied/ufogeometry
  * License: BSD 3
- * 
+ *
  */
 
 /*
@@ -48,10 +48,12 @@
 #include <ufo/geometry/line_segment.h>
 #include <ufo/geometry/obb.h>
 #include <ufo/geometry/plane.h>
+#include <ufo/geometry/point.h>
 #include <ufo/geometry/ray.h>
 #include <ufo/geometry/sphere.h>
 
-namespace ufo::geometry {
+namespace ufo::geometry
+{
 /////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////// Intersection tests
 //////////////////////////////////////
@@ -100,8 +102,7 @@ bool intersects(const Frustum& frustum, const Sphere& sphere);
 bool intersects(const LineSegment& line_segment, const AABB& aabb);
 // bool intersects(const LineSegment& line_segment, const Capsule& capsule);
 bool intersects(const LineSegment& line_segment, const Frustum& frustum);
-bool intersects(const LineSegment& line_segment_1,
-                const LineSegment& line_segment_2);
+bool intersects(const LineSegment& line_segment_1, const LineSegment& line_segment_2);
 bool intersects(const LineSegment& line_segment, const OBB& obb);
 bool intersects(const LineSegment& line_segment, const Plane& plane);
 bool intersects(const LineSegment& line_segment, const Point& point);
@@ -201,8 +202,7 @@ bool inside(const Frustum& frustum, const Sphere& sphere);
 // Line segment
 bool inside(const LineSegment& line_segment, const AABB& aabb);
 bool inside(const LineSegment& line_segment, const Frustum& frustum);
-bool inside(const LineSegment& line_segment_1,
-            const LineSegment& line_segment_2);
+bool inside(const LineSegment& line_segment_1, const LineSegment& line_segment_2);
 bool inside(const LineSegment& line_segment, const OBB& obb);
 bool inside(const LineSegment& line_segment, const Plane& plane);
 bool inside(const LineSegment& line_segment, const Point& point);

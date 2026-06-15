@@ -45,6 +45,8 @@
 #include <ufo/geometry/point.h>
 #include <ufo/math/quaternion.h>
 
+#include <algorithm>
+
 namespace ufo::geometry
 {
 struct OBB {

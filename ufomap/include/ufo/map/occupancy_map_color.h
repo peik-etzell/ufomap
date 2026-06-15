@@ -42,7 +42,23 @@
 #ifndef UFO_MAP_OCCUPANCY_MAP_COLOR_H
 #define UFO_MAP_OCCUPANCY_MAP_COLOR_H
 
+#include <ufo/map/code.h>
+#include <ufo/map/color.h>
+#include <ufo/map/key.h>
 #include <ufo/map/occupancy_map_base.h>
+#include <ufo/map/occupancy_map_node.h>
+#include <ufo/map/point_cloud.h>
+#include <ufo/map/types.h>
+#include <ufo/math/pose6.h>
+
+#include <algorithm>
+#include <cmath>
+#include <future>
+#include <iterator>
+#include <string>
+#include <tuple>
+#include <utility>
+#include <vector>
 
 namespace ufo::map
 {

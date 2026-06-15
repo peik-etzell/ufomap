@@ -44,6 +44,9 @@
 
 #include <ufo/geometry/types.h>
 
+#include <cstddef>
+#include <vector>
+
 namespace ufo::geometry
 {
 class BoundingVolume

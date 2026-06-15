@@ -44,6 +44,8 @@
 
 #include <lz4.h>
 #include <lz4hc.h>
+#include <ufo/geometry/bounding_volume.h>
+#include <ufo/geometry/types.h>
 #include <ufo/map/code.h>
 #include <ufo/map/iterator/octree.h>
 #include <ufo/map/iterator/octree_nearest.h>
@@ -51,10 +53,21 @@
 #include <ufo/map/octree_node.h>
 #include <ufo/map/types.h>
 
+#include <array>
+#include <cmath>
+#include <cstdlib>
 #include <cstring>
 #include <fstream>
+#include <ios>
+#include <iosfwd>
+#include <istream>
+#include <limits>
 #include <optional>
+#include <ostream>
 #include <sstream>
+#include <stdexcept>
+#include <string>
+#include <utility>
 
 namespace ufo::map
 {

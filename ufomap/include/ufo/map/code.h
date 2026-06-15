@@ -47,8 +47,11 @@
 #include <ufo/map/types.h>
 
 #include <algorithm>
+#include <cmath>
+#include <cstddef>
 #include <execution>
 #include <list>
+#include <utility>
 #include <vector>
 
 namespace ufo::map

@@ -42,15 +42,39 @@
 #ifndef UFO_MAP_OCCUPANCY_MAP_BASE_H
 #define UFO_MAP_OCCUPANCY_MAP_BASE_H
 
+#include <ufo/geometry/aabb.h>
+#include <ufo/geometry/bounding_volume.h>
+#include <ufo/geometry/point.h>
+#include <ufo/geometry/types.h>
+#include <ufo/map/code.h>
 #include <ufo/map/iterator/occupancy_map.h>
 #include <ufo/map/iterator/occupancy_map_nearest.h>
+#include <ufo/map/key.h>
 #include <ufo/map/occupancy_map_node.h>
 #include <ufo/map/octree.h>
 #include <ufo/map/point_cloud.h>
 #include <ufo/map/types.h>
+#include <ufo/math/pose6.h>
 
+#include <algorithm>
+#include <array>
 #include <bitset>
+#include <chrono>
+#include <cmath>
+#include <cstddef>
+#include <cstdint>
 #include <future>
+#include <ios>
+#include <istream>
+#include <iterator>
+#include <limits>
+#include <optional>
+#include <ostream>
+#include <sstream>
+#include <string>
+#include <type_traits>
+#include <utility>
+#include <vector>
 
 namespace ufo::map
 {
