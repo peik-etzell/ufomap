@@ -484,7 +484,7 @@ class OccupancyMapBase : public Octree<DATA_TYPE, OccupancyMapInnerNode<DATA_TYP
 		direction.normalize();
 		Point3 end = origin + (direction * max_range);
 
-		if (!Base::moveLineIntoBBX(origin, end)) {
+		if (!Base::moveLineInside(origin, end)) {
 			// Line fully outside of octree bounds
 			return std::nullopt;
 		}
@@ -503,13 +503,13 @@ class OccupancyMapBase : public Octree<DATA_TYPE, OccupancyMapInnerNode<DATA_TYP
 				return current_code;
 			}
 			if (!ignore_unknown && isUnknown(current_code)) {
-				return std::nullopt;
+				return current_code;
 			}
 			Base::computeRayTakeStep(current, step, t_delta, t_max);
 			current_code = Base::toCode(current);
 		}
 
-		return isOccupied(current_code) ? current_code : std::nullopt;
+		return isOccupied(current_code) ? std::optional<Code>{current_code} : std::nullopt;
 	}
 
 	//
